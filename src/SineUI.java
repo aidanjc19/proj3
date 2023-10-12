@@ -16,7 +16,7 @@ public class SineUI {
 
     }
 
-    
+
     public static void checkUserInput(Scanner getUserInput) {
         int userChoice;
         do {
