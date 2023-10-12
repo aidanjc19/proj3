@@ -6,8 +6,18 @@ public class SineUI {
 
     public static void main(String[] args) {
         Scanner getUserInput = new Scanner(System.in);
+        checkUserInput(getUserInput);
 
-        //PUT IN A METHOD
+
+
+
+
+        getUserInput.close();
+
+    }
+
+    
+    public static void checkUserInput(Scanner getUserInput) {
         int userChoice;
         do {
             printMenu();
@@ -21,16 +31,6 @@ public class SineUI {
             getUserInput.nextLine();
             getUserInput.nextLine();
         } while(userChoice != 0);
-
-
-
-
-        getUserInput.close();
-
-    }
-
-    public static void executeChosenMethod(int userChoice) {
-
     }
 
     public static void printMenu() {
