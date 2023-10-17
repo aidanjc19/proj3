@@ -22,6 +22,7 @@ public class SineDraw {
         for (int xValue = 0; xValue < DP_WIDTH; xValue += 1) {
             int endXValue = xValue + 1;
             gr.drawLine(xValue, getYValueSineWave(xValue), endXValue, getYValueSineWave(endXValue));
+            System.out.println("x: " + endXValue + " y: " + getYValueSineWave(endXValue));
         }
     }
 
